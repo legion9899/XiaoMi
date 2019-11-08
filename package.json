@@ -1,0 +1,41 @@
+{
+  "name": "xiaomi",
+  "version": "0.1.0",
+  "description": "互联网服务和零售",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "电器",
+    "数码产品及软件"
+  ],
+  "author": "Roy",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-file-include": "^2.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "gulp-remove-use-strict": "^1.0.0",
+    "jquery": "^3.4.1",
+    "swiper": "^5.2.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "iOS 7",
+    "FireFox > 20",
+    "Android > 4.1"
+  ]
+}

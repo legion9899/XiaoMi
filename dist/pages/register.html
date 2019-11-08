@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="ie=edge">
+    <title>小米账号 - 注册</title>
+    <link rel="shortcut icon" href=../icon/favicon.ico>
+    <link rel=stylesheet href=../css/base.css>
+    <link rel=stylesheet href=//at.alicdn.com/t/font_1486752_fc3k0qz4bo.css>
+    <link rel=stylesheet href=../css/register.css>
+</head>
+<body>
+    <div class=wrapper>
+        <div class=logo>
+            <a href=../pages/index.html class=milogo></a>
+        </div>
+
+        <div class=title>
+            <h4>注册小米账号</h4>            
+        </div>
+
+        <form method=POST action=../server/register.php id=signupForm>
+            <h4>设置用户名</h4>
+            <input type=text placeholder=请输入用户名 name=username class=username>
+            <h4>设置密码</h4>
+            <input type=password placeholder=请输入密码 name=password class=password>
+            <div class=subbar><input type=submit value=立即注册 class=regdata></div>
+            <div class=privacy>
+                已同意并同意：小米
+                <a href=javascript:;>用户协议</a>
+                和
+                <a href=javascript:;>隐私政策</a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <ul>
+            <li><a href=javascript:;>简体</a><span>|</span></li>
+            <li><a href=javascript:;>繁体</a><span>|</span></li>
+            <li><a href=javascript:;>English</a><span>|</span></li>
+            <li><a href=javascript:; target=_blank>常见问题</a></li>
+        </ul>
+        
+        <p>小米公司版权所有-京ICP备10046444-<a href=javascript:; target=_blank><span><img src=../images/footer/ghs.png alt=ghs.png></span>京公网安备11010802020134号</a>-京ICP证110507号</p>
+    </footer>
+
+    <script src=../js/jquery.min.js></script>
+    <script src=../js/jquery.validate.min.js></script>
+    <script src=../js/messages_zh.js></script>
+    <script src=../js/register.js></script>
+</body>
+</html>

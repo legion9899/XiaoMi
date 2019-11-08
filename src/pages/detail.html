@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米商城 - 商品详情</title>
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="../icon/favicon.ico">
+    <!-- 基础样式 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 头部样式 -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1486752_fc3k0qz4bo.css">
+    <!-- 详情页样式 -->
+    <link rel="stylesheet" href="../css/detail.css">
+    <!-- 尾部样式 -->
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <!-- header -->
+    -roy-include("header.html", { "text": "detail" })
+    
+
+
+    <div class="login-notic">
+        <div class="container">
+            为方便您购买，请提前登录
+            <a href="../pages/login.html">立即登录</a>
+            <a class="icon" href="javascript:;">
+                <i class="close iconfont icon-guanbi"></i>
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="details"></div>
+
+    <div class="infomation"></div>
+
+    <!-- footer -->
+    -roy-include("footer.html", { "text": "detail" })
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- header -->
+    <script src="../js/header.js"></script>
+    <!-- cookie -->
+    <script src="../js/cookie.js"></script>
+    <!-- ajax -->
+    <script src="../js/ajax.js"></script>
+    <!-- 详情页 -->
+    <script src="../js/detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="ie=edge">
+    <title>小米账号 - 登录</title>
+    <link rel="shortcut icon" href=../icon/favicon.ico>
+    <link rel=stylesheet href=../css/base.css>
+    <link rel=stylesheet href=../css/login.css>
+    <link rel=stylesheet href=//at.alicdn.com/t/font_1486752_fc3k0qz4bo.css>
+</head>
+<body>
+    <header>
+        <a href=../pages/index.html>
+            <img src=../images/logo/mistore_logo.png alt=mistore_logo.png>
+        </a>
+    </header>
+    <div class=container>
+        <div class=banner onclick='location.href="../pages/detail.html"'></div>
+        <div class=layout>
+            <div class=login-main>
+                <ul class=login-btn>
+                    <li class=active>
+                        帐号登录
+                        <span class=line>|</span>
+                    </li>
+                    <li>扫码登录</li>
+                </ul>
+                <ol class=login-info>
+                    <li class=active>
+                        <div class=userLogin>
+                            <form action=../server/login.php method=POST>
+                                <!-- 输入框 -->
+                                <div class=loginInp>
+                                    <p><input type=text name=username class=username placeholder=邮箱/手机号码/小米ID></p>
+                                    <p><input type=password name=password class=password placeholder=密码></p>
+                                </div>
+                                <!-- 错误信息 -->
+                                <div class="err_tip hide">
+                                    <div class=tippo>
+                                        <em class=icon_error></em>
+                                        <span class=error-con>用户名或密码不正确</span>
+                                    </div> 
+                                </div>
+                                <button class=btn>登录</button>
+                            </form>
+                        </div>
+                        <div class=otherLogin>
+                            <div class=ohterLink>
+                                <a href=javascript:; class=smsLink>手机短信登录/注册</a>
+                                <div class=outer-link>
+                                    <a href=./register.html>立即注册</a>
+                                    <span>|</span>
+                                    <a href=javascript:;>忘记密码？</a>
+                                </div>
+                            </div>
+                            <div class=other-login>
+                                <fieldset>
+                                    <legend>其他方式登录</legend>
+                                    <div class=loginLink>
+                                        <a href=javascript:; class="iconfont icon-GitHub"></a>
+                                        <a href=javascript:; class="iconfont icon-Facebook"></a>
+                                        <a href=javascript:; class="iconfont icon-WeChat"></a>
+                                        <a href=javascript:; class="iconfont icon-Weibo"></a>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=QR-Code></div>
+                        <div class=text>
+                            <p>使用<span>小米商城APP</span>扫一扫</p>
+                            <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href=javascript:;>简体</a><span>|</span></li>
+            <li><a href=javascript:;>繁体</a><span>|</span></li>
+            <li><a href=javascript:;>English</a><span>|</span></li>
+            <li><a href=javascript:; target=_blank>常见问题</a><span>|</span></li>
+            <li><a href=javascript:; target=_blank>隐私政策</a></li>
+        </ul>
+        
+        <p>小米公司版权所有-京ICP备10046444-<a href=javascript:; target=_blank><span><img src=../images/footer/ghs.png alt=ghs.png></span>京公网安备11010802020134号</a>-京ICP证110507号</p>
+    </footer>
+    
+    
+    <!-- 密码验证 / 免密登录 -->
+    <script src=../js/jquery.min.js></script>
+    <script src=../js/cookie.js></script>
+    <script src=../js/login.js></script>
+</body>
+</html>

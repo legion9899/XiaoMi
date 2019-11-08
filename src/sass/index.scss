@@ -1,0 +1,580 @@
+// 全部商品分类
+.link-category {
+    display: none;
+    .text {
+        display: none;
+    }
+}
+
+// top
+.topContainer {
+    background-color: #fff;
+
+    .swiper-container {
+        width: 1226px;
+        height: 460px;
+        margin: 0 auto;
+        position: relative;
+
+        .swiper-wrapper {
+            cursor: pointer;
+
+            .swiper-slide {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        // 轮播图切换焦点
+        .swiper-pagination {
+            position: absolute;
+            width: 400px;
+            left: auto;
+            right: 30px;
+            bottom: 20px;
+            text-align: right;
+            transition: opacity .3s;
+            transform: translateZ(0);
+            z-index: 10;
+
+            .swiper-pagination-bullet {
+                width: 6px;
+                height: 6px;
+                border: 2px solid #fff;
+                margin: 0 4px;
+                border-color: hsla(0,0%,100%,.3);
+                border-radius: 10px;
+                overflow: hidden;
+                background: rgba(0,0,0,.4);
+                opacity: 1;
+
+                &:hover {
+                    background: hsla(0,0%,100%,.4);
+                    border-color: rgba(0,0,0,.4);
+                }
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+            
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+                background: #fff;
+                border-color: rgba(0,0,0,.4);
+            }
+
+        }
+
+        .swiper-button-prev {
+            background: url(../images/banner/icon-slides.png) no-repeat -84px 50%;
+            color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 234px;
+            width: 41px;
+            height: 69px;
+            margin-top: -35px;
+            z-index: 10;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-position: 0 50%;
+            }
+        }
+        .swiper-button-next {
+            background: url(../images/banner/icon-slides.png) no-repeat -125px 50%;
+            color: transparent;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 42px;
+            height: 69px;
+            margin-top: -35px;
+            z-index: 10;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-position: -42px 50%;
+            }
+        }
+    }
+
+    .selling {
+        width: 1226px;
+        height: 170px;
+        margin: 14px auto 26px;
+        display: flex;
+        justify-content: space-between;
+
+        .home-channel-list {
+            width: 234px;
+            height: 170px;
+            background: #5f5750;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                a {
+                    width: 76px;
+                    height: 82px;
+                    font-size: 12px;
+                    color: #ceccca;
+                    border-left: 1px solid #665e57;
+                    border-top: 1px solid #665e57;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                p {
+                    margin-top: 8px;
+                }
+
+                &:hover a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .promolist {
+            width: 978px;
+            height: 170px;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                width: 316px;
+                height: 170px;
+                display: block;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.homeContainer {
+    width: 1226px;
+    margin: 0 auto;
+    padding-top: 4px;
+    padding-bottom: 12px;
+    background: #f5f5f5;
+
+    .home-flashsale {
+        margin-bottom: 22px;
+        position: relative;
+
+        .box-hd {
+            position: relative;
+            height: 58px;
+
+            .title {
+                margin: 0;
+                font-size: 22px;
+                font-weight: 200;
+                line-height: 58px;
+                color: #333;
+            }
+
+        }
+
+        .box-bd {
+            width: 1226px;
+            height: 340px;
+            margin: 0 auto;
+
+            .row{
+                height: 340px;
+                margin-left: -14px;
+
+                .flashsale{
+                    border-top-color: #e53935;
+                    height: 300px;
+                    padding-top: 39px;
+                    border-top-width: 1px;
+                    border-top-style: solid;
+                    background: #f1eded;
+                    text-align: center;
+                    width: 234px;
+                    float: left;
+                    margin-left: 14px;
+                    min-height: 1px;
+
+                    .round{
+                        font-size: 21px;
+                        color: #ef3a3b;
+                        padding-top: 15px;
+                    }
+
+                    img {
+                        margin: 25px auto;
+                        border: 0;
+                    }
+                    
+                    .desc {
+                        color: rgba(0,0,0,.54);
+                        font-size: 15px;
+                    }
+
+                    .countdown {
+                        width: 168px;
+                        margin: 28px auto 0;
+
+                        span {
+                            width: 46px;
+                            height: 46px;
+                            background: #605751;
+                            color: #fff;
+                            font-size: 24px;
+                            line-height: 46px;
+                            float: left;
+                        }
+
+                        i {
+                            width: 15px;
+                            float: left;
+                            height: 46px;
+                            line-height: 46px;
+                            color: #605751;
+                            font-size: 28px;
+                            font-style: normal;
+                        }
+                    }
+                }
+
+                .flashsale-list {
+                    float: left;
+                    width: 978px;
+                    margin-left: 13px;
+                    min-height: 1px;
+                    overflow: hidden;
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        height: 340px;
+                        width: 3920px;
+                        transition: all .5s;
+
+                        li {
+                            width: 234px;
+                            float: left;
+                            margin-left: 11px;
+                            border-top: 1px solid #ff6700;
+                            text-align: center;
+                            background: #fff;
+                            transition: all .6s;
+                            position: relative;
+
+                            a {
+                                display: block;
+                                height: 300px;
+                                padding-top: 39px;
+                                position: relative;
+                                color: #757575;
+
+                                .thumb {
+                                    display: block;
+                                    width: 160px;
+                                    margin: 0 auto 22px;
+
+                                    img {
+                                        width: 160px;
+                                        height: 160px;
+                                    }
+                                }
+
+                                .title {
+                                    margin: 0 20px 3px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    text-overflow: ellipsis;
+                                    color: #212121;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                }
+
+                                .desc {
+                                    height: 18px;
+                                    margin: 0 20px 12px;
+                                    font-size: 12px;
+                                    text-overflow: ellipsis;
+                                    color: #b0b0b0;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                }
+                                
+                                .price {
+                                    margin: 0;
+                                    color: #ff6709;
+
+                                    del {
+                                        color: #b0b0b0;
+                                        text-decoration: line-through;
+                                    }
+                                }
+
+                                .flag {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    width: 64px;
+                                    height: 20px;
+                                    margin-left: -32px;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: #fff;
+                                    background-color: #e53935;
+                                    z-index: 2;
+
+
+                                    // 移除所有 empty标签 元素的内容
+                                    &:empty {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .swiper-controls {
+                    position: absolute;
+                    right: 0;
+                    top: 24px;
+
+                    .flashsale-prev, .flashsale-next{
+                        display: inline-block;
+                        width: 24px;
+                        height: 16px;
+                        padding: 3px 5px;
+                        margin-left: -1px;
+                        border: 1px solid #e0e0e0;
+                        font-size: 16px;
+                        line-height: 16px;
+                        transition: color .5s;
+                        color: #b0b0b0;
+                        text-align: center;
+                        cursor: pointer;
+
+                        i {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home-banner-box {
+        height: 120px;
+        margin: 22px 0;
+        overflow: hidden;
+
+        a {
+
+            img {
+                width: 1226px;
+                height: 120px;
+            }
+        }
+    }
+
+    .home-brick-box {
+        margin-bottom: 8px;
+
+        .box-hd {
+            position: relative;
+            height: 58px;
+
+            .title {
+                margin: 0;
+                font-size: 22px;
+                font-weight: 200;
+                line-height: 58px;
+                color: #333;
+
+            }
+
+            .more {
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                .more-link {
+                    font-size: 16px;
+                    line-height: 58px;
+                    color: #424242;
+                    transition: all .4s;
+
+                    .icon-right {
+                        width: 12px;
+                        height: 12px;
+                        padding: 4px;
+                        margin-left: 8px;
+                        border-radius: 16px;
+                        font-size: 12px;
+                        line-height: 12px;
+                        background: #b0b0b0;
+                        color: #fff;
+                        vertical-align: 1px;
+                        transition: all .4s;
+                    }
+                    
+                    &:hover {
+                        color: #ff6700;
+
+                        .icon-right {
+                            background-color: #ff6700;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-bd {
+            width: 1226px;
+            height: 628px;
+
+            .row{
+                margin-left: -14px;
+
+                .span4{
+                    width: 234px;
+                    height: 170px;
+                    float: left;
+
+                    .brick-proto{
+                        height: 614px;
+
+                        .brick-item{
+                            height: 614px;
+                            position: relative;
+                            z-index: 1;
+                            float: left;
+                            width: 234px;
+                            margin-left: 14px;
+                            margin-bottom: 14px;
+                            background: #fff;
+                            transition: all .2s linear;
+
+                            &:hover {
+                                box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                                transform: translate3d(0,-2px,0);
+                            }
+
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+
+                                img{
+                                    width: 234px;
+                                    height: 614px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .span16 {
+                    width: 978px;
+                    float: left;
+                    margin-left: 14px;
+                    min-height: 1px;
+
+                    .brick-lists {
+                        width: 992px;
+                        height: 614px;
+
+                        li {
+                            height: 260px;
+                            padding: 20px 0;
+                            position: relative;
+                            z-index: 1;
+                            float: left;
+                            width: 234px;
+                            margin-left: 14px;
+                            margin-bottom: 14px;
+                            background: #fff;
+                            transition: all .2s linear;
+
+                            &:hover {
+                                box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                                transform: translate3d(0,-2px,0);
+
+                            }
+
+                            a {
+                                color: #757575;
+
+                                .figure-img {
+                                    width: 160px;
+                                    height: 160px;
+                                    margin: 0 auto 18px;
+
+                                    img {
+                                        width: 160px;
+                                        height: 160px;
+                                    }
+                                    
+                                    .title {
+                                        margin: 0 10px 2px;
+                                        text-align: center;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: #333;
+                                    }
+
+                                    .desc {
+                                        margin: 0 10px 10px;
+                                        height: 18px;
+                                        font-size: 12px;
+                                        color: #b0b0b0;
+                                        text-align: center;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                    }
+
+                                    .price {
+                                        margin: 0 10px 14px;
+                                        text-align: center;
+                                        color: #ff6700;
+
+                                        del {
+                                            color: #b0b0b0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

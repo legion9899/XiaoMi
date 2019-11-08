@@ -1,0 +1,53 @@
+html, body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, legend, tr, td, input, select, textarea, button, img{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+input, select, video, audio, textarea, button {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+small {
+    font-size: 12px;
+}
+
+em {
+    font-style: normal;
+}
+
+textarea {
+    resize: none;
+}
+
+html, body {
+    height: 100%;
+}

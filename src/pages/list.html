@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全部商品分类-小米商城</title>
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="../icon/favicon.ico">
+    <!-- 基础样式 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 头部样式 -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1486752_fc3k0qz4bo.css">
+    <!-- 列表页样式 -->
+    <link rel="stylesheet" href="../css/list.css">
+    <!-- 尾部样式 -->
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <!-- header -->
+    -roy-include("header.html", { "text": "list" })
+
+    <!-- 索引 -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="javascript:;">首页</a>
+            <span class="sep">&gt;</span>
+            <a href="javascript:;">所有分类</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="goods-list-box">
+            <div class="goods-list list">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- 分页器 -->
+    <div class="pagi" id="pagi"></div>
+
+    <!-- 猜你喜欢 -->
+    <div class="guess-like">
+        <div class="recommend">
+            <h2 class="like">
+                <span class="title">猜你喜欢</span>
+            </h2>
+            <div class="recommend-box">
+                <ul class="img-list">
+                        
+                </ul>
+                <ol class="pointer">
+                    <li>
+                        <span class="dot">1</span>
+                    </li>
+                    <li>
+                        <span class="dot">2</span>
+                    </li>
+                    <li>
+                        <span class="dot">3</span>
+                    </li>
+                    <li>
+                        <span class="dot">4</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    -roy-include("footer.html", { "text": "list" })
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- header -->
+    <script src="../js/header.js"></script>
+    <!-- cookie -->
+    <script src="../js/cookie.js"></script>
+    <!-- pagination -->
+    <script src="../js/pagination.js"></script>
+    <!-- ajax -->
+    <script src="../js/ajax.js"></script>
+    <!-- list -->
+    <script src="../js/list.js"></script>
+</body>
+</html>
