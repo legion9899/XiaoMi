@@ -30,7 +30,7 @@
   "dependencies": {
     "gulp-remove-use-strict": "^1.0.0",
     "jquery": "^3.4.1",
-    "swiper": "^5.2.0"
+    "swiper": "^6.5.1"
   },
   "browserslist": [
     "last 2 versions",
